@@ -27,15 +27,15 @@ dynamics (SGRLD) algorithm presented in the paper "Stochastic Gradient
 Riemannian Langevin Dynamics on the Probability Simplex" by Sam Patterson
 and Yee Whye Teh at NIPS 2013.  BibTeX entry:
 
-@inproceedings{PatTeh2013a,
-  Author = {S. Patterson and Y. W. Teh},
-  Booktitle = {Advances in Neural Information Processing Systems},
-  Title = {Stochastic Gradient {R}iemannian {L}angevin Dynamics on the Probability Simplex},
-  Year = {2013}}
+    @inproceedings{PatTeh2013a, 
+      Author = {S. Patterson and Y. W. Teh},
+      Booktitle = {Advances in Neural Information Processing Systems},
+      Title = {Stochastic Gradient {R}iemannian {L}angevin Dynamics on the Probability Simplex},
+      Year = {2013}}
 
 We use cython for the Gibbs sampling step which means you need to compile:
 
-$ python setup.py build_ext --inplace
+    $ python setup.py build_ext --inplace
 
 The entry point is run_wiki.py which runs the algorithm on articles from
 wikipedia. Currently it's set to download articles as it is running which
